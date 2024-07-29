@@ -5,3 +5,7 @@
 # 	Ex: 1,1,2,3,5,8,13,21,34,55,89,144
 # 	F11 est le premier terme de la suite qui contient 3 chiffres.
 # Trouver le plus petit n tq Fn est le premier terme contenant 1000 chiffres.
+def fibonnaci(nombre):
+    if nombre < 1 :
+        return nombre
+    return abs(fibonnaci(nombre-1) + fibonnaci(nombre-2))
