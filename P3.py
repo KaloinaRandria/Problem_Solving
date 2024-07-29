@@ -12,4 +12,18 @@ def estPremier(nombre):
         if nombre % i == 0 or nombre % (i+2) == 0:
             return False
         i += 6
-    return True  
+    return True
+
+def searchNiemePremier(nieme):
+    if nieme < 1:
+        raise ValueError("nieme doit etre un entier positif")
+    count = 0
+    nombre = 2
+    while True:
+        if estPremier(nombre):
+            count +=1
+            if count == nieme:
+                return nombre
+        nombre +=1
+
+print (searchNiemePremier(500001))
