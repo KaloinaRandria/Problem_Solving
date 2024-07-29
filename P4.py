@@ -9,3 +9,14 @@ def fibonnaci(nombre):
     if nombre < 1 :
         return nombre
     return abs(fibonnaci(nombre-1) + fibonnaci(nombre-2))
+
+def searchN(count):
+    n = 1
+    while True:
+        fn = fibonnaci(n)
+        if count == len(str(fn)):
+            return fn
+        n += 1
+
+print (searchN(10))
+
