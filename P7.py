@@ -30,4 +30,6 @@ def findMaxSolution(limit):
     max_p = max(count , key=count.get)
     return max_p,count[max_p]
 
-print(findMaxSolution(1000))
+limit = 1000
+max_p, max_count = findMaxSolution(limit)
+print(f"Le périmètre avec le plus de solutions est {max_p} avec {max_count} solutions.")
